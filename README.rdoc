@@ -1,9 +1,20 @@
 = trie {<img src="https://secure.travis-ci.org/jamesmoriarty/trie.png" />}[http://travis-ci.org/jamesmoriarty/trie]
 
-Description goes here.
+  1.9.2p320 :003 > trie = Trie.new
+   => #<Trie:0x007fba74854a18 @root={}>
+  1.9.2p320 :005 > trie.build("more")
+   => #<Trie:0x007fba74854a18 @root={"m"=>{"o"=>{"r"=>{"e"=>{:end=>true}}}}}>
+  1.9.2p320 :007 > trie.build("morph")
+   => #<Trie:0x007fba74854a18 @root={"m"=>{"o"=>{"r"=>{"e"=>{:end=>true}, "p"=>{"h"=>{:end=>true}}}}}}>
+  1.9.2p320 :009 > trie.prefixed("mo")
+   => ["more", "morph"]
+  1.9.2p320 :010 > trie.prefixed("more")
+   => ["more"]
+  1.9.2p320 :011 > trie.to_a
+   => ["more", "morph"]
 
 == Contributing to trie
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
