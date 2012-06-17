@@ -21,9 +21,9 @@ class TestTrie < Test::Unit::TestCase
   end
   
   def test_prefixed
-    assert_equal @trie.prefixed("z"), []
-    assert_equal @trie.prefixed("m"), ["more", "morph"]
-    assert_equal @trie.prefixed("morp"), ["morph"]
+    assert_equal [], @trie.prefixed("z")
+    assert_equal ["morph"], @trie.prefixed("morp")
+    assert_equal ["more", "morph"], @trie.prefixed("m").sort
   end
 
 end
