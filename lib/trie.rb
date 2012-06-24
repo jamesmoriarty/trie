@@ -4,13 +4,13 @@ class Trie
     @root = {}
   end
 
-  def build(string)
+  def add(word)
     node = @root
-    string.chars.each do |char|
+    word.chars.each do |char|
       node[char] ||= {}
       node = node[char]
     end
-    
+
     node[:end] = true
   end
 
@@ -20,7 +20,7 @@ class Trie
       return false if node.nil?
       node = node[char]
     end
-    
+
     !!node and node[:end]
   end
 
@@ -29,7 +29,7 @@ class Trie
     node.each do |key, value|
       key == :end ? array << prefix : to_a(value, prefix + key, array)
     end
-    
+
     array
   end
 
@@ -38,7 +38,7 @@ class Trie
       return [] unless node[char]
       node = node[char]
     end
-    
+
     to_a(node).map { |suffix| prefix + suffix }
   end
 
