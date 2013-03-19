@@ -1,17 +1,19 @@
 = trie {<img src="https://secure.travis-ci.org/jamesmoriarty/trie.png" />}[http://travis-ci.org/jamesmoriarty/trie]
 
-  1.9.2p320 :003 > trie = Trie.new
-   => #<Trie:0x007fba74854a18 @root={}>
-  1.9.2p320 :005 > trie.build("more")
-   => #<Trie:0x007fba74854a18 @root={"m"=>{"o"=>{"r"=>{"e"=>{:end=>true}}}}}>
-  1.9.2p320 :007 > trie.build("morph")
-   => #<Trie:0x007fba74854a18 @root={"m"=>{"o"=>{"r"=>{"e"=>{:end=>true}, "p"=>{"h"=>{:end=>true}}}}}}>
-  1.9.2p320 :009 > trie.prefixed("mo")
-   => ["more", "morph"]
-  1.9.2p320 :010 > trie.prefixed("more")
-   => ["more"]
-  1.9.2p320 :011 > trie.to_a
-   => ["more", "morph"]
+```ruby
+> trie = Trie.new
+ # => #<Trie:0x007fba74854a18 @root={}>
+> trie.build("more")
+ # => #<Trie:0x007fba74854a18 @root={"m"=>{"o"=>{"r"=>{"e"=>{:end=>true}}}}}>
+> trie.build("morph")
+ # => #<Trie:0x007fba74854a18 @root={"m"=>{"o"=>{"r"=>{"e"=>{:end=>true}, "p"=>{"h"=>{:end=>true}}}}}}>
+> trie.prefixed("mo")
+ # => ["more", "morph"]
+> trie.prefixed("more")
+ # => ["more"]
+> trie.to_a
+ # => ["more", "morph"]
+```
 
 == Contributing to trie
 
