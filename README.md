@@ -1,4 +1,4 @@
-= trie {<img src="https://secure.travis-ci.org/jamesmoriarty/trie.png" />}[http://travis-ci.org/jamesmoriarty/trie]
+= trie <img src="https://secure.travis-ci.org/jamesmoriarty/trie.png" />
 
 ```ruby
 > trie = Trie.new
