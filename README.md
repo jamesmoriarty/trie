@@ -1,4 +1,5 @@
 trie <img src="https://secure.travis-ci.org/jamesmoriarty/trie.png" />
+[![Dependency Status](https://gemnasium.com/jamesmoriarty/trie.png)](https://gemnasium.com/jamesmoriarty/trie)
 =====
 
 ```ruby
