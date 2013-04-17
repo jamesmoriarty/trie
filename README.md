@@ -4,9 +4,9 @@ trie [![Build Status](https://secure.travis-ci.org/jamesmoriarty/trie.png)](http
 ```ruby
 > trie = Trie.new
  # => #<Trie:0x007fba74854a18 @root={}>
-> trie.build("more")
+> trie.add("more")
  # => #<Trie:0x007fba74854a18 @root={"m"=>{"o"=>{"r"=>{"e"=>{:end=>true}}}}}>
-> trie.build("morph")
+> trie.add("morph")
  # => #<Trie:0x007fba74854a18 @root={"m"=>{"o"=>{"r"=>{"e"=>{:end=>true}, "p"=>{"h"=>{:end=>true}}}}}}>
 > trie.prefixed("mo")
  # => ["more", "morph"]
