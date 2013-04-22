@@ -1,4 +1,4 @@
-trie [![endorse](https://api.coderwall.com/jamesmoriarty/endorsecount.png)](https://coderwall.com/jamesmoriarty) [![Build Status](https://secure.travis-ci.org/jamesmoriarty/trie.png)](https://secure.travis-ci.org/jamesmoriarty/trie.png) [![Dependency Status](https://gemnasium.com/jamesmoriarty/trie.png)](https://gemnasium.com/jamesmoriarty/trie)
+trie [![endorse](https://api.coderwall.com/jamesmoriarty/endorsecount.png)](https://coderwall.com/jamesmoriarty) [![Build Status](https://secure.travis-ci.org/jamesmoriarty/trie.png)](https://secure.travis-ci.org/jamesmoriarty/trie.png) [![Dependency Status](https://gemnasium.com/jamesmoriarty/trie.png)](https://gemnasium.com/jamesmoriarty/trie) [![Coverage Status](https://coveralls.io/repos/jamesmoriarty/trie/badge.png?branch=master)](https://coveralls.io/r/jamesmoriarty/trie)
 =====
 
 ```ruby
