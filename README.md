@@ -33,3 +33,7 @@ Copyright
 Copyright (c) 2012 James Moriarty. See LICENSE.txt for
 further details.
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jamesmoriarty/trie/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
